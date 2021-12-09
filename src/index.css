@@ -1,3 +1,29 @@
-img{
-    width: 50%;
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url("https://www.janetdthomas.com/wp-content/uploads/2019/02/dream-background-5858.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.card{  
+    width: 40%;
+    margin: 30px auto;
+}
+nav{
+   color: aliceblue;
+   text-align: center;
+   background-image: linear-gradient(to bottom right, pink, purple);
+   border: 3px solid purple;
+   border-radius: 50px;
+}
+.container-fluid{
+    color: white;
+}
+footer{
+   text-align: center;
+   background-color: pink;
+   border: 3px solid purple
 }

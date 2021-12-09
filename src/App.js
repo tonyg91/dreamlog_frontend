@@ -76,27 +76,24 @@ function App() {
 
   return (
     <div className="App">
+      <nav>
       <h1>Dream Log</h1>
-      <Link to="/new"><button type="button" class="btn btn-success">Add Dream</button></Link>
+      <Link to="/new">
+        <button type="button" class="btn btn-success">Add Dream</button>
+      </Link>
+      <Link to="/">
+        <button type="button" class="btn btn-info">Home</button>
+        </Link>
+      </nav>
       <Routes>
         <Route path="/" element={<AllDream dreams={dreams}/>}/>
         <Route path="/dream/:id" element={<OneDream dreams={dreams} edit={getTargetDream} deleteDream={deleteDream}/>}/>
         <Route path="/new" element={<Form initialDream={nullDream} handleSubmit={addDreams} buttonLabel="Create Dream"/>}/>
         <Route path="/edit" element={<Form initialDream={targetDream} handleSubmit={updateDream} buttonLabel="Update Dream"/>}/>
       </Routes>
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-             <div class="carousel-item active">
-              <img src="https://images.saatchiart.com/saatchi/986181/art/8008478/7075742-HSC00001-7.jpg" class="d-block w-50" alt="one"/>
-             </div>
-            <div class="carousel-item">
-             <img src="https://i.pinimg.com/originals/8f/41/66/8f416696d943f089358b01f7a9c967c6.jpg" class="d-block w-50" alt="two"/>
-            </div>
-            <div class="carousel-item">
-             <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/blogs/14045/images/fuLo2UZURGWU5N4D0IN3_Copy_of_Night_Beauty_72.jpg" class="d-block w-50" alt="three"/>
-            </div>
-         </div>
-        </div>
+      <footer>
+        <h3>Understaning Your Dream</h3>
+      </footer>
     </div>
   );
 }

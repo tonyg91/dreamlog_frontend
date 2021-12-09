@@ -6,7 +6,7 @@ const OneDream = ({dreams, edit, deleteDream}) => {
     const dream = dreams.find((dream) => dream.id === id)
     return (<div>
         <Link to="/">
-        <button type="button" class="btn btn-info">Go Back</button>
+        <button type="button" class="btn btn-info">Home</button>
         </Link>
         <button type="button" class="btn btn-primary" onClick={(event) => edit(dream)}>Edit Dream</button>
         <button type="button" class="btn btn-danger" onClick={(event) => deleteDream(dream)}>Delete Dream</button>
