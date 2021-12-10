@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 const Dream = ({dream}) => {
     return <div>
         {/* <Link to={`/dream/${dream.id}`}>
@@ -12,7 +12,9 @@ const Dream = ({dream}) => {
           <div class="card-body">
            <h5 class="card-title">{dream.title}</h5>
            <p class="card-text">{dream.description}</p>
-           <a href={`/dream/${dream.id}`} class="btn btn-primary">View log</a>
+           <Link to={`/dream/${dream.id}`}>
+             <button>View Log</button>
+           </Link>
           </div>
         </div>
     </div>
