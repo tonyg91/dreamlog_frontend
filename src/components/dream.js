@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 const Dream = ({dream}) => {
     return <div>
         {/* <Link to={`/dream/${dream.id}`}>
@@ -8,7 +8,7 @@ const Dream = ({dream}) => {
         <h2>{dream.date}</h2>
         <img src={dream.image} alt="dreampic"/> */}
         <div class="card">
-         <img src={dream.image} class="card-img-top" alt="..."/>
+         <img src={dream.image} class="card-img-top" alt="cardimage"/>
           <div class="card-body">
            <h5 class="card-title">{dream.title}</h5>
            <p class="card-text">{dream.description}</p>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {useNavigate} from "react-router-dom"
 
-const Form = ({initialDream, handleSubmit, buttonLabel}) => {
+const Form = ({initialDream, handleSubmit, buttonLabel, dreams}) => {
     const navigate = useNavigate()
     // Form state
     const [formData, setFormData] = useState(initialDream)
@@ -15,7 +15,8 @@ const Form = ({initialDream, handleSubmit, buttonLabel}) => {
         handleSubmit(formData)
         navigate("/")
     }
-    return <form onSubmit={handleSubmission}>
+    return <>
+    <form onSubmit={handleSubmission}>
       <input type="text" 
       onChange={handleChange} 
       value={formData.title} 
@@ -38,5 +39,6 @@ const Form = ({initialDream, handleSubmit, buttonLabel}) => {
       placeholder="Date"/>
       <input type="button" class="btn btn-warning" type="submit" value={buttonLabel}/>
     </form>
+    </>
 }
 export default Form

@@ -79,17 +79,17 @@ function App() {
       <nav>
       <h1>Dream Log</h1>
       <Link to="/new">
-        <button type="button" class="btn btn-success">Add Dream</button>
+        <button class="add">Add Dream</button>
       </Link>
       <Link to="/">
-        <button type="button" class="btn btn-info">Home</button>
+        <button class="home">Home</button>
         </Link>
       </nav>
       <Routes>
         <Route path="/" element={<AllDream dreams={dreams}/>}/>
         <Route path="/dream/:id" element={<OneDream dreams={dreams} edit={getTargetDream} deleteDream={deleteDream}/>}/>
-        <Route path="/new" element={<Form initialDream={nullDream} handleSubmit={addDreams} buttonLabel="Create Dream"/>}/>
-        <Route path="/edit" element={<Form initialDream={targetDream} handleSubmit={updateDream} buttonLabel="Update Dream"/>}/>
+        <Route path="/new" element={<Form dreams={dreams} initialDream={nullDream} handleSubmit={addDreams} buttonLabel="Create Dream"/>}/>
+        <Route path="/edit" element={<Form dreams={dreams} initialDream={targetDream} handleSubmit={updateDream} buttonLabel="Update Dream"/>}/>
       </Routes>
       <footer>
         <h3>Understaning Your Dream</h3>

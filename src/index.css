@@ -7,23 +7,50 @@ body{
     background-position: center; 
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: white;
+    font-family: fantasy;
 }
 .card{  
-    width: 40%;
+    width: 50%;
     margin: 30px auto;
+    color: black;
+    text-align: center;
 }
 nav{
    color: aliceblue;
    text-align: center;
    background-image: linear-gradient(to bottom right, pink, purple);
    border: 3px solid purple;
-   border-radius: 50px;
+   border-bottom-left-radius: 50px;
+   border-bottom-right-radius: 50px;
+   padding-bottom: 10px;
+   box-shadow: 4px 4px 4px white;
 }
-.container-fluid{
-    color: white;
-}
+
 footer{
    text-align: center;
    background-color: pink;
    border: 3px solid purple
 }
+.home {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #c01ad6;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .home:hover {background-color: hotpink}
+  
+  .home:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
