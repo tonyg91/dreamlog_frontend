@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {useNavigate} from "react-router-dom"
 
-const Form = ({initialDream, handleSubmit, buttonLabel, dreams}) => {
+const Form = ({initialDream, handleSubmit, buttonLabel}) => {
     const navigate = useNavigate()
     // Form state
     const [formData, setFormData] = useState(initialDream)
