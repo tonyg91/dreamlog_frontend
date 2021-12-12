@@ -8,12 +8,13 @@ const Dream = ({dream}) => {
         <h2>{dream.date}</h2>
         <img src={dream.image} alt="dreampic"/> */}
         {/* Cloud affect source = https://codepen.io/Mark_Bowley/pen/xEbuI */}
+        {/* Dream stories source = http://www.end-your-sleep-deprivation.com/dream-stories.html */}
           
         <div class="card">
          <img src={dream.image} class="card-img-top" alt="cardimage"/>
           <div class="card-body">
            <h5 class="card-title">{dream.title}</h5>
-           <p class="card-text">{dream.description}</p>
+           <p class="card-text">{dream.date}</p>
            <Link to={`/dream/${dream.id}`}>
              <button class="view">View Log</button>
            </Link>

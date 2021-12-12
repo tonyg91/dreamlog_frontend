@@ -283,9 +283,15 @@ footer{
     box-shadow: 4px 4px 4px whitesmoke;
 }
 #carouselExampleSlidesOnly{
-    width: 30%;
+    width: 50%;
     margin: 30px auto;
 }
 .artref{
     text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    .view{
+        font-size: 10px;
+    }
 }
