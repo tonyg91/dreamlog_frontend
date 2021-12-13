@@ -1,5 +1,5 @@
-# Dream Log BackEnd
-## Welcome to the Dream Log BackEnd 
+# Dream Log Front End
+## Welcome to the Dream Log App
 
 ### Built With
 -Masonite
@@ -27,7 +27,8 @@ date: String,
 
 
 ### User Stories
-When a user is in the backend of the application the user should be able to display all the Dreams created. If a user is using Postman, Thunder Client, or Insomnia they can go to the routes listed about to create, update, or delete Dreams. If any errors occur while trying to do so double check what kind of request, you are making to the server and verify it with what you are attempting. For reference use the table above for guidance on which route to take. 
+  When using the dream log app a user can log and keep a record of all of their dreams. The user also has a choice to add an image that they find that reminds them of the dream or, they can add thier own drawings/artwork to the log. They can add a date so they can remeber the day it happend. They also have the option to add a brief description of they dream for reference because we all know that we usually forget our dreams within like five minutes after waking up.
+
 
 ### Challenges
 I was having a issue with the carousel placement when trying to add it to the index page it would populate with every dream log. And once I finally got it to work but it would show on all pages instead of just the index page. So after much deliberation I decided to put it in the footer which so far has not given me any issues.
