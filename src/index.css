@@ -42,6 +42,7 @@ footer{
    text-align: center;
    background-color: pink;
    border: 3px solid purple;
+   padding-top: 10px;
 
 }
 .home {
@@ -262,6 +263,7 @@ footer{
 
 .singledream{
     width: 80%;
+    margin-bottom: 15px;
 }
 #edit{
     margin: 40px 40px 40px 40px;
