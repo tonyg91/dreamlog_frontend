@@ -19,10 +19,10 @@ date: String,
 ## Dreams
 | URL | Method | Action |
 |-----|--------|--------|
-| / | GET | Masonite Welcome Page|
-| /dream | GET | Index page of all Dreams|
-| /dream | POST | Create A Dream Log |
-| /dream/:id | PUT | Update Dream |
+| / | GET | Index page of all Dreams|
+| /dream/:id | GET | Show page for single dream|
+| /new | POST | Create A Dream Log |
+| /edit| PUT | Update Dream |
 | /dream/:id | DELETE | Delete selected Dream |
 
 
